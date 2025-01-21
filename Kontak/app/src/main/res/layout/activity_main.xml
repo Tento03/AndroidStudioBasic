@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONTAK"
+            android:textStyle="bold"
+            ></TextView>
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="cari kontak"
+        android:id="@+id/buttoncari"
+        ></Button>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"></RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listview"
+        ></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100px"
+        android:layout_marginRight="100px"
+        android:id="@+id/tambahkontak"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:src="@drawable/tambah"
+        ></android.support.design.widget.FloatingActionButton>
+</LinearLayout>
